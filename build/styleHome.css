@@ -9,7 +9,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(7, 72, 35, 0.7);
+    background-color: rgb(20, 131, 68);
     display: flex;
     justify-content: flex-start; /* Align content to the left */
     height: 100vh; /* Full viewport height */
@@ -54,7 +54,7 @@ input[type="button"]:hover {
     color: rgb(247, 241, 241);
     position: absolute;
     bottom: 30px; /* Adjust this value to control the distance from the bottom */
-    width: 25%; 
+    width: 160px; 
 }
 #exit:hover{
     background-color: #b42613;

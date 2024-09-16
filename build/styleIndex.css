@@ -1,7 +1,7 @@
 
 body{
 margin: 10vh;
-background-image: linear-gradient(80deg, #01f386 10%, #01f386 10%, rgba(32, 190, 101, 0.7) 100%);
+background-image: linear-gradient(80deg, #3deb9c 5%, #01f386 10%, rgb(28, 135, 75) 50%);
 color: rgb(237, 231, 231);
 overflow: hidden; /* Prevents scrolling */
 background-size: cover;
@@ -29,7 +29,12 @@ label{
     margin-left: 9px;
     font-size: 2.5vh;
 }
-
+p{
+ font-size: 13px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
 .container{
     padding: 5vh;
     background-color: rgb(7, 72, 35, 0.7);
@@ -54,7 +59,7 @@ color: #ded5d5;
 }
 button:hover{
 color: rgb(6, 6, 6);
-background-color: #0d5029;
+background-color: #37ca74;
 cursor: pointer; /* Change cursor to pointer on hover */
 transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
 

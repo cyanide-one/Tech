@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alumno</title>
+    <link rel="stylesheet" href="styleForms.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar with buttons -->
+      <div class="sidebar">
+        <table>
+          <tr>
+            <td>
+              <input
+                type="button"
+                value="Tutor"
+                onclick="window.location.href='tutor.html'"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                id="alumnosLista"
+                type="button"
+                value="Alumnos"
+                onclick="window.location.href='alumno.html'"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="button"
+                value="Docente"
+                onclick="window.location.href='docente.html'"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><input type="button" value="Grados" /></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="Notas" /></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="Informes" /></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                id="exit"
+                type="button"
+                value="Salir"
+                onclick="window.location.href='index.html'"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Form container -->
+      <div class="form-container">
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+          <label for="apellido">Apellidos:</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            required
+          /><br /><br />
+
+          <label for="cedula">C.I:</label>
+          <input
+            type="text"
+            id="cedula"
+            name="cedula"
+            required
+            pattern="\d*"
+          /><br /><br />
+
+          <input type="submit" value="Guardar" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

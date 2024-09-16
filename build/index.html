@@ -13,13 +13,18 @@
         <div class="container">
             <h1 for="log-in"> ¡Bienvenido!</h1>
             <label for="nombre">Nombre:</label>
-            <input type="text" id="name" placeholder="Ingrese Nombre " name="inputNombre">
+            <input type="text" id="name" placeholder="Ingrese Nombre " name="inputNombre" required>
             <label for="contraseña">Contraseña:</label>
-            <input type="password" id="password" placeholder="Ingrese constaseña" name="inputContraseña">
-            <button type="button">Ingresar</button>
+            <input type="password" id="password" placeholder="Ingrese constaseña" name="inputContraseña" required>
+            <button type="button" onclick="window.location.href='home.html'">Ingresar</button>
+            <p>
+                <a href="https://www.google.com/search?q=como+recordar+mi+contraseña?" style="color: #ffffff;">
+                    ¿Olvidó la contraseña?
+                </a>
+            </p>
 
         </div>
     </form>
     
 </body>
-</html>
+</html> 
