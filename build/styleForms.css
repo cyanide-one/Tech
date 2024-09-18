@@ -16,8 +16,11 @@ body {
 }
 
 .container {
-    display: flex; /* Use flexbox to align sidebar and form */
-    flex: 1; /* Allow container to use full width */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    flex: 1; /* Allow container to expand based on content */
+    width: 100%; /* Ensure it takes full width */
+    height: auto; /* Allow it to grow with content */
 }
 
 .sidebar {
@@ -119,4 +122,53 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .form-container input[type="submit"]:hover {
     background-color: #218838; /* Retain your submit button hover color */
+}
+/* Ensures the container grows with content */
+.form-container {
+    margin-left: 240px; /* Offset for the fixed sidebar */
+    width: calc(100% - 240px); /* Remaining width after accounting for sidebar */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* White background for the form box */
+    border: 1px solid #ddd; /* Light gray border around the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgb(47, 168, 78); /* Light shadow for the form box */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow the form container to expand as needed */
+}
+
+.contenedorNotas {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensures the container does not overflow horizontally */
+    margin: 0 auto;
+    overflow-x: auto; /* Allows horizontal scroll if the table overflows */
+    box-sizing: border-box; /* Includes padding and borders in the container's width */
+    height: auto; /* Allow the height of the container to grow with content */
+}
+
+.contenedorNotas table {
+    width: 100%; /* Table takes full width of the container */
+    table-layout: fixed; /* Ensures the table respects container width */
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: left;
+    word-wrap: break-word; /* Prevents long content from overflowing cells */
+}
+
+.contenedorNotas th, .contenedorNotas td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+.contenedorNotas th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.contenedorNotas td {
+    background-color: #ffffff;
 }

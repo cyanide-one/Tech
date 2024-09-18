@@ -43,7 +43,13 @@
             <td><input type="button" value="Grados" /></td>
           </tr>
           <tr>
-            <td><input type="button" value="Notas" onclick="window.location.href='notas.html'" /></td>
+            <td>
+              <input
+                type="button"
+                value="Notas"
+                onclick="window.location.href='notas.html'"
+              />
+            </td>
           </tr>
           <tr>
             <td><input type="button" value="Informes" /></td>
@@ -64,18 +70,7 @@
       <!-- Form container -->
       <div class="form-container">
         <form>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required /><br /><br />
-
-          <label for="apellido">Apellidos:</label>
-          <input
-            type="text"
-            id="apellido"
-            name="apellido"
-            required
-          /><br /><br />
-
-          <label for="cedula">C.I:</label>
+          <label for="cedula">C.I del Estudiante:</label>
           <input
             type="text"
             id="cedula"
@@ -83,8 +78,79 @@
             required
             pattern="\d*"
           /><br /><br />
+          <input type="submit" value="Buscar" />
 
-          <input type="submit" value="Guardar" />
+          <div class="contenedorNotas">
+            <table style="border: 1px solid #000000">
+              <tr>
+                <th colspan="3">Alumno:</th>
+              </tr>
+              <tr>
+                <th>Materia:</th>
+                <th>Puntaje:</th>
+                <th>Nota:</th>
+              </tr>
+              <tr>
+
+              </tr>
+                <th colspan="3">Primera parcial</th>
+              </tr>
+              <tr>
+                <td>Matemática</td>
+                <td>x</td>
+                <td>x</td>
+              </tr>
+              <tr>
+                <td>Ciencias</td>
+                <td>x</td>
+                <td>x</td>
+              </tr>
+            </tr>
+            <th colspan="3">Segunda parcial</th>
+          </tr>
+          <tr>
+            <td>Matemática</td>
+            <td>x</td>
+            <td>x</td>
+          </tr>
+          <tr>
+            <td>Ciencias</td>
+            <td>x</td>
+            <td>x</td>
+          </tr>
+
+        </tr>
+        <th colspan="3">Finales</th>
+      </tr>
+      <tr>
+        <td>Matemática</td>
+        <td>x</td>
+        <td>x</td>
+      </tr>
+      <tr>
+        <td>Ciencias</td>
+        <td>x</td>
+        <td>x</td>
+      </tr>
+    </tr>
+    <tr>
+        <td>Matemática</td>
+        <td>x</td>
+        <td>x</td>
+      </tr>
+      <tr>
+        <td>Ciencias</td>
+        <td>x</td>
+        <td>x</td>
+      </tr>
+    </tr>
+    <th colspan="2">Promedio:</th>
+    <th colspan="1">x</th>
+  </tr>
+  
+            </table>
+          </div>
+          
         </form>
       </div>
     </div>
