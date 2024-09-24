@@ -1,6 +1,3 @@
-/* styleHome.css */
-
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,62 +8,62 @@ body {
     font-family: Arial, sans-serif;
     background-color: rgb(7, 72, 35, 0.7);
     display: flex;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     padding: 20px;
 }
 
 .container {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    flex: 1; /* Allow container to expand based on content */
-    width: 100%; /* Ensure it takes full width */
-    height: auto; /* Allow it to grow with content */
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    height: auto;
 }
 
 .sidebar {
     display: flex;
-    flex-direction: column; /* Align children vertically */
-    background-color: rgba(255, 255, 255, 0.9); /* White background for the sidebar */
-    border: 1px solid #ddd; /* Light gray border around the sidebar */
-    border-radius: 8px; /* Rounded corners */
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 20px;
-    width: 200px; /* Fixed width for the sidebar */
-    box-shadow: 0 4px 8px rgb(47, 168, 78); /* Light shadow for the sidebar */
-    position: fixed; /* Fix sidebar to the left */
-    top: 20px; /* Space from the top */
-    bottom: 20px; /* Space from the bottom */
-    left: 20px; /* Space from the left */
+    width: 200px;
+    box-shadow: 0 4px 8px rgb(47, 168, 78);
+    position: fixed;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
 }
 
 .sidebar table {
-    width: 100%; /* Make the table take up full width of the sidebar */
-    border-collapse: collapse; /* Remove spacing between table cells */
+    width: 100%;
+    border-collapse: collapse;
 }
 
 .sidebar td {
-    padding-bottom: 10px; /* Space between buttons */
+    padding-bottom: 10px;
 }
 
 .sidebar input[type="button"] {
-    width: 100%; /* Make buttons take up full width of the sidebar */
+    width: 100%;
     padding: 10px;
-    background-color: #2e6c04; /* Dark background for buttons */
-    color: white; /* White text for buttons */
+    background-color: #2e6c04;
+    color: white;
     border: none;
-    border-radius: 5px; /* Rounded corners for buttons */
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
 
 .sidebar input[type="button"]:hover {
-    background-color: #13b428; /* Slightly darker background on hover */
+    background-color: #13b428;
 }
 
 #exit {
     background-color: #2e6c04;
     color: rgb(247, 241, 241);
     width: 160px;
-    margin-top: 180%; /* Push the button to the bottom of the sidebar */
+    margin-top: 180%;
 }
 
 #exit:hover {
@@ -75,13 +72,16 @@ body {
 }
 
 .form-container {
-    margin-left: 240px; /* Offset for the fixed sidebar */
-    width: calc(100% - 240px); /* Remaining width after accounting for sidebar */
+    margin-left: 240px;
+    width: calc(100% - 240px);
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* White background for the form box */
-    border: 1px solid #ddd; /* Light gray border around the form */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgb(47, 168, 78); /* Light shadow for the form box */
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(47, 168, 78);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .form-container form {
@@ -97,13 +97,14 @@ body {
 .form-container input[type="date"],
 .form-container input[type="number"],
 .form-container input[type="email"],
+.form-container select,
 .form-container textarea {
     width: 100%;
     padding: 8px;
-    margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -115,26 +116,13 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: #28a745; /* Retain your submit button color */
+    background-color: #28a745;
     color: white;
     cursor: pointer;
 }
 
 .form-container input[type="submit"]:hover {
-    background-color: #218838; /* Retain your submit button hover color */
-}
-/* Ensures the container grows with content */
-.form-container {
-    margin-left: 240px; /* Offset for the fixed sidebar */
-    width: calc(100% - 240px); /* Remaining width after accounting for sidebar */
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* White background for the form box */
-    border: 1px solid #ddd; /* Light gray border around the form */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgb(47, 168, 78); /* Light shadow for the form box */
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* Allow the form container to expand as needed */
+    background-color: #218838;
 }
 
 .contenedorNotas {
@@ -142,20 +130,20 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Ensures the container does not overflow horizontally */
+    width: 100%;
     margin: 0 auto;
-    overflow-x: auto; /* Allows horizontal scroll if the table overflows */
-    box-sizing: border-box; /* Includes padding and borders in the container's width */
-    height: auto; /* Allow the height of the container to grow with content */
+    overflow-x: auto;
+    box-sizing: border-box;
+    height: auto;
 }
 
 .contenedorNotas table {
-    width: 100%; /* Table takes full width of the container */
-    table-layout: fixed; /* Ensures the table respects container width */
+    width: 100%;
+    table-layout: fixed;
     border-collapse: collapse;
     margin-top: 10px;
     text-align: left;
-    word-wrap: break-word; /* Prevents long content from overflowing cells */
+    word-wrap: break-word;
 }
 
 .contenedorNotas th, .contenedorNotas td {

@@ -43,7 +43,13 @@
             <td><input type="button" value="Grados" /></td>
           </tr>
           <tr>
-            <td><input type="button" value="Notas" onclick="window.location.href='notas.html'" /></td>
+            <td>
+              <input
+                type="button"
+                value="Notas"
+                onclick="window.location.href='notas.html'"
+              />
+            </td>
           </tr>
           <tr>
             <td><input type="button" value="Informes" /></td>
@@ -83,6 +89,24 @@
             required
             pattern="\d*"
           /><br /><br />
+
+          <label for="grado">Grado:</label>
+          <select name="Grados" id="grado">
+            <option value="primero">Primer Grado</option>
+            <option value="primero">Segundo Grado</option>
+            <option value="primero">Tercer Grado</option>
+            <option value="primero">Cuarto Grado</option>
+            <option value="primero">Quinto Grado</option>
+            <option value="primero">Sexto Grado</option>
+          </select>
+          <br /><br />
+
+          <label for="turno">Turno:</label>
+          <select name="Turnos" id="turno">
+            <option value="mañana">Mañana</option>
+            <option value="tarde">Tarde</option>
+          </select>
+          <br /><br />
 
           <input type="submit" value="Guardar" />
         </form>
