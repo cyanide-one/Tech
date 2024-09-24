@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alumno</title>
+    <title>Grados</title>
     <link rel="stylesheet" href="styleForms.css" />
   </head>
   <body>
     <div class="container">
-      <!-- Sidebar with buttons -->
+    
       <div class="sidebar">
         <table>
           <tr>
@@ -40,10 +40,16 @@
             </td>
           </tr>
           <tr>
-            <td><input type="button" value="Grados" onclick="window.location.href='grados.html'"/></td>
+            <td><input type="button" value="Grados" onclick="window.location.href='grados.html'" /></td>
           </tr>
           <tr>
-            <td><input type="button" value="Notas" onclick="window.location.href='notas.html'" /></td>
+            <td>
+              <input
+                type="button"
+                value="Notas"
+                onclick="window.location.href='notas.html'"
+              />
+            </td>
           </tr>
           <tr>
             <td><input type="button" value="Informes" /></td>
@@ -64,39 +70,20 @@
       <!-- Form container -->
       <div class="form-container">
         <form>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required /><br /><br />
+          
+          <label for="grado">Seleccione  un grado:</label>
 
-          <label for="apellido">Apellidos:</label>
-          <input
-            type="text"
-            id="apellido"
-            name="apellido"
-            required
-          /><br /><br />
+          <select name="Grados" id="grado">
+            <option value="primero">Primer Grado</option>
+            <option value="primero">Segundo Grado</option>
+            <option value="primero">Tercer Grado</option>
+            <option value="primero">Cuarto Grado</option>
+            <option value="primero">Quinto Grado</option>
+            <option value="primero">Sexto Grado</option>
+          </select>
+          <br /><br />
 
-          <label for="cedula">C.I:</label>
-          <input
-            type="text"
-            id="cedula"
-            name="cedula"
-            required
-            pattern="\d*"
-          /><br /><br />
-
-          <label for="telefono">Teléfono:</label>
-          <input
-            type="text"
-            id="telefono"
-            name="telefono"
-            required
-            pattern="\d*"
-          /><br /><br />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br /><br />
-
-          <input type="submit" value="Guardar" />
+          <input type="submit" value="Buscar" />
         </form>
       </div>
     </div>
