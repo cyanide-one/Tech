@@ -9,14 +9,14 @@
 <script src="js\main.js" defer></script>
 <body>
 
-    <form >
+    <form action="php/login.php" method="post">
         <div class="container">
             <h1 for="log-in"> ¡Bienvenido!</h1>
             <label for="nombre">Nombre:</label>
-            <input type="text" id="name" placeholder="Ingrese Nombre " name="inputNombre" required>
+            <input type="text" id="name" placeholder="Ingrese Nombre " name="nombre" required>
             <label for="contraseña">Contraseña:</label>
-            <input type="password" id="password" placeholder="Ingrese constaseña" name="inputContraseña" required>
-            <button type="button" onclick="window.location.href='home.html'">Ingresar</button>
+            <input type="password" id="password" placeholder="Ingrese constaseña" name="contraseña" required>
+            <button type="submit">Ingresar</button>
             <p>
                 <a href="https://www.google.com/search?q=como+recordar+mi+contraseña?" style="color: #ffffff;">
                     ¿Olvidó la contraseña?

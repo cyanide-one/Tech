@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alumno</title>
+    <title>Profesor</title>
     <link rel="stylesheet" href="styleForms.css" />
   </head>
   <body>
@@ -63,8 +63,8 @@
 
       <!-- Form container -->
       <div class="form-container">
-        <form>
-          <label for="nombre">Nombre:</label>
+        <form action="php/registro_docente.php" method="post">
+          <label for="nombre">Nombres:</label>
           <input type="text" id="nombre" name="nombre" required /><br /><br />
 
           <label for="apellido">Apellidos:</label>
@@ -97,8 +97,60 @@
           <input type="email" id="email" name="email" required /><br /><br />
 
          
-          <label for="materia">Materia:</label>
-          <input type="text" id="materia" name="materia" required /><br /><br />
+          <label for="grado">Selecciona el grado:</label>
+          <select name="grado" id="grado">
+              <!-- Primaria -->
+              <option value="Primero">Primero</option>
+              <option value="Segundo">Segundo</option>
+              <option value="Tercero">Tercero</option>
+              <option value="Cuarto">Cuarto</option>
+              <option value="Quinto">Quinto</option>
+              <option value="Sexto">Sexto</option>
+          
+              <!-- Secundaria -->
+              <option value="Septimo">Septimo</option>
+              <option value="Octavo">Octavo</option>
+              <option value="Noveno">Noveno</option>
+              <option value="Primer Año">Primer Año</option>
+              <option value="Segundo Año">Segundo Año</option>
+              <option value="Tercer Año">Tercer Año</option>
+          </select>
+          <br /><br />
+
+
+          <label for="turno">Turno:</label>
+          <select name="turno" id="turno">
+            <option value="Mañana">Mañana</option>
+            <option value="Tarde">Tarde</option>
+          </select>
+          <br /><br />
+
+          <label for="materia">Selecciona la materia:</label>
+          <select name="materia" id="materia">
+              <option value="Matematicas">Matemáticas</option>
+              <option value="Ciencias">Ciencias</option>
+              <option value="Historia">Historia</option>
+              <option value="Geografía">Geografía</option>
+              <option value="Inglés">Inglés</option>
+              <option value="Educación Física">Educación Física</option>
+              <option value="Arte">Arte</option>
+              <option value="Informática">Informática</option>
+              <option value="Filosofía">Filosofía</option>
+              <option value="Economía">Economía</option>
+              <option value="Sociología">Sociología</option>
+              <option value="Sociolaboral">Sociolaboral</option>
+              <option value="Emprendimiento">Emprendimiento</option>
+              <option value="Cálculo">Cálculo</option>
+              <option value="Estadística">Estadística</option>
+              <option value="Tecnología">Tecnología</option>
+              <option value="Dibujo Técnico">Dibujo Técnico</option>
+              <option value="Química Avanzada">Química Avanzada</option>
+              <option value="Física Avanzada">Física Avanzada</option>
+              <option value="Biología Avanzada">Biología Avanzada</option>
+          </select>
+          <br /><br />
+          
+          
             
           <input type="submit" value="Guardar" />
         </form>

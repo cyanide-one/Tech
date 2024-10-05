@@ -69,7 +69,7 @@
 
       <!-- Form container -->
       <div class="form-container">
-        <form>
+        <form action="php/registro_alumno.php" method="post">
           <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" name="nombre" required /><br /><br />
 
@@ -80,8 +80,13 @@
             name="apellido"
             required
           /><br /><br />
+          <label class="control-label">Fecha de Nacimiento</label>
+						<input class="form-control" type="date" name="f_nacimiento">
+          <br /><br />
 
-          <label for="cedula">C.I:</label>
+
+
+          <label for="cedula">C.I Del Alumno:</label>
           <input
             type="text"
             id="cedula"
@@ -90,21 +95,39 @@
             pattern="\d*"
           /><br /><br />
 
-          <label for="grado">Grado:</label>
-          <select name="Grados" id="grado">
-            <option value="primero">Primer Grado</option>
-            <option value="primero">Segundo Grado</option>
-            <option value="primero">Tercer Grado</option>
-            <option value="primero">Cuarto Grado</option>
-            <option value="primero">Quinto Grado</option>
-            <option value="primero">Sexto Grado</option>
+          <label for="cedula">C.I Del Tutor:</label>
+          <input
+            type="text"
+            id="cedula"
+            name="cedula_tutor"
+            required
+            pattern="\d*"
+          /><br /><br />
+
+          <label for="grado">Selecciona el grado:</label>
+          <select name="grado" id="grado">
+              <!-- Primaria -->
+              <option value="Primero">Primero</option>
+              <option value="Segundo">Segundo</option>
+              <option value="Tercero">Tercero</option>
+              <option value="Cuarto">Cuarto</option>
+              <option value="Quinto">Quinto</option>
+              <option value="Sexto">Sexto</option>
+          
+              <!-- Secundaria -->
+              <option value="Septimo">Septimo</option>
+              <option value="Octavo">Octavo</option>
+              <option value="Noveno">Noveno</option>
+              <option value="Primer Año">Primer Año</option>
+              <option value="Segundo Año">Segundo Año</option>
+              <option value="Tercer Año">Tercer Año</option>
           </select>
           <br /><br />
 
           <label for="turno">Turno:</label>
-          <select name="Turnos" id="turno">
-            <option value="mañana">Mañana</option>
-            <option value="tarde">Tarde</option>
+          <select name="turno" id="turno">
+            <option value="Mañana">Mañana</option>
+            <option value="Tarde">Tarde</option>
           </select>
           <br /><br />
 

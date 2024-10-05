@@ -1,0 +1,84 @@
+body{
+    margin: 10vh;
+    background-image: url('../images/images.jpg/images.jpg');
+    color: rgb(237, 231, 231);
+    overflow: hidden; /* Prevents scrolling */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+form{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Full viewport height */
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
+    transition: transform 0.5s;
+}
+
+h1:hover {
+    animation: wiggle 0.6s;
+}
+
+label{
+    margin-left: 9px;
+    font-size: 2.5vh;
+}
+
+.container{
+    padding: 5vh;
+    background-color: rgba(7, 72, 35, 0.7);
+    border-radius: 50px;
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+input[type=text], input[type=password], input[type=email], button{
+    width: 100%;
+    padding: 1.9vh;
+    margin: 15px 2px;
+    display: inline-block;
+    border: 1px solid #199D51;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #199D51;
+    color: #ded5d5;
+}
+
+input::placeholder {
+    color: #ded5d5;
+    opacity: 1; /* Makes sure the placeholder is fully visible */
+}
+
+input:hover{
+    border-color: #0f4a28;
+}
+
+input:focus{
+    outline: none;
+    transform: scale(1.02); /* Slightly enlarges the input on focus */
+}
+
+button:hover{
+    color: rgb(6, 6, 6);
+    background-color: #0d5029;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(-5deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
